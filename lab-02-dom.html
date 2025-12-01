@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/material-symbols.css" />
     <link rel="stylesheet" href="./css/dom.css" />
 
-    <script type="module" src="src/js/lab-02-dom.js"></script>
+    <script type="module" src="./js/lab-02-dom.js"></script>
 
     <title>Lab-02: DOM</title>
   </head>
@@ -22,51 +22,58 @@
     </button>
     <div class="app-cmp-section-list">
       <template class="add-cmp-section-component">
-         <article class="app-cmp-section">
-      <header>
-        <button
-          type="button"
-          class="app-cl-btn app-cl-primary app-cmd-add-number-input"
-        >
-          <i class="material-symbols-outlined">add</i>
-          Add
-        </button>
-      </header>
-      <div class="app-cl-column-container">
-        <section class="app-cmp-number-list">
-          <template class="app-tmp-number-component">
-            <div class="app-cmp-number">
-              <label>
-                <b>Number<span class="app-title-number"></span></b>
-                <input type="number" class="app-inp-number" value="0" />
-              </label>
-              <button
-                type="button"
-                class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-number-input"
-              >
-                <i class="material-symbols-outlined">delete_forever</i>
-              </button>
-            </div>
-          </template>
-        </section>
-        <section>
-          <div class="app-cmp-number">
-            <label>
-              <b>Result</b>
-              <output
-                class="app-cl-number app-out-number"
-                style="padding-right: calc(5ch + 3px)"
-                >0</output
-              >
-            </label>
+        <article class="app-cmp-section">
+          <label>
+            <b>Section<span class="app-title-section"></span></b>
+          </label>
+          <header>
+            <button
+              type="button"
+              class="app-cl-btn app-cl-primary app-cmd-add-number-input"
+            >
+              <i class="material-symbols-outlined">add</i>
+              Add
+            </button>
+          </header>
+
+          <div class="app-cl-column-container">
+            <section class="app-cmp-number-list">
+              <template class="app-tmp-number-component">
+                <div class="app-cmp-number">
+                  <label>
+                    <b>Number<span class="app-title-number"></span></b>
+                    <input type="number" class="app-inp-number" value="0" />
+                  </label>
+                  <button
+                    type="button"
+                    class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-number-input"
+                  >
+                    <i class="material-symbols-outlined">delete_forever</i>
+                  </button>
+                </div>
+              </template>
+            </section>
+            <section>
+              <div class="app-cmp-number">
+                <label>
+                  <b>Result</b>
+                  <output
+                    class="app-cl-number app-out-number"
+                    style="padding-right: calc(5ch + 3px)"
+                    >0</output
+                  >
+                </label>
+              </div>
+            </section>
           </div>
-        </section>
-      </div>
-    </article>
+          <button
+            type="button"
+            class="app-cl-btn app-cl-warn app-cl-icon app-cmd-remove-section"
+          >
+            <i class="material-symbols-outlined">Remove Section</i>
+          </button>
+        </article>
       </template>
     </div>
-        <button type="button" class="app-cl-btn app-cl-primary app-cmd-remove-section">
-      <i class="material-symbols-outlined">Remove Section</i>
-    </button>
   </body>
 </html>
