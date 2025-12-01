@@ -17,7 +17,12 @@
     <title>Lab-02: DOM</title>
   </head>
   <body>
-    <article class="app-cmp-section">
+    <button type="button" class="app-cl-btn app-cl-primary app-cmd-add-section">
+      <i class="material-symbols-outlined">Add Section</i>
+    </button>
+    <div class="app-cmp-section-list">
+      <template class="add-cmp-section-component">
+         <article class="app-cmp-section">
       <header>
         <button
           type="button"
@@ -58,5 +63,10 @@
         </section>
       </div>
     </article>
+      </template>
+    </div>
+        <button type="button" class="app-cl-btn app-cl-primary app-cmd-remove-section">
+      <i class="material-symbols-outlined">Remove Section</i>
+    </button>
   </body>
 </html>
